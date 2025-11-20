@@ -4,6 +4,8 @@
     $artist = "Mitski";
     $album = "Bury Me at Makeout Creek";
     $mood = "Melancholy";
+    $genre = "Alternative/Indie";
+    $year = 2014;
 
     // concatenation using dot operator
     $songInfo = $title . " by " . $artist;
@@ -62,17 +64,14 @@
             background-image: linear-gradient(to right, #494848,rgb(155, 155, 155));
             color: white;
         }
-        .song-container {
-            display: grid;
-        }
-        .song-info img {
-            justify-self: right;
+        h3 {
+            font-weight: normal;
         }
         .song-info {
-            justify-self: right;
+            float: right;
         }
         .lyrics {
-            justify-self: left;
+            float: left;
         }
     </style>
 </head>
@@ -80,12 +79,14 @@
     <!-- main container -->
     <div class="song-container">
         <h1><?= $title ?></h1>
+        <h3><em><?= $artist?></em></h3>
         <!-- main info about song -->
         <div class="song-info">
             <img src="https://t2.genius.com/unsafe/197x197/https%3A%2F%2Fimages.genius.com%2F8aafb91d485accd94ca130c8164393c7.608x608x1.jpg">
-            <p><b>Artist:</b> <?= $artist ?></p>
             <p><b>Album:</b> <?= $album ?></p>
+            <p><b>Released:</b> <?= $year ?></p>
             <p><b>Mood:</b> <?= $mood ?></p>
+            <p><b>Genre:</b> <?= $genre ?></p>
             <p><em>(Song Information combined: <?= $songInfo ?>)</em></p>
         </div>
         <br>
