@@ -82,7 +82,7 @@
         <h3><em><?= $artist?></em></h3>
         <!-- main info about song -->
         <div class="song-info">
-            <img src="https://t2.genius.com/unsafe/197x197/https%3A%2F%2Fimages.genius.com%2F8aafb91d485accd94ca130c8164393c7.608x608x1.jpg">
+            <img src="https://t2.genius.com/unsafe/197x197/https%3A%2F%2Fimages.genius.com%2F8aafb91d485accd94ca130c8164393c7.608x608x1.jpg" alt="album cover">
             <p><b>Album:</b> <?= $album ?></p>
             <p><b>Released:</b> <?= $year ?></p>
             <p><b>Mood:</b> <?= $mood ?></p>
@@ -146,3 +146,4 @@
     </div>
 </body>
 </html>
+
